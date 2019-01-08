@@ -1,0 +1,18 @@
+@import url("595ce8ce1cd01ae2f7181196eb3e0e8f.css");
+nav {
+  position: sticky;
+  top: 0px; }
+
+nav ul {
+  display: flex;
+  align-content: space-around; }
+
+.you-tube-video {
+  width: 720px;
+  height: 406.77966px; }
+
+@media (max-width: 759px) {
+  .you-tube-video {
+    width: 360px;
+    height: 203.38983px;
+    border: 1px solid red; } }

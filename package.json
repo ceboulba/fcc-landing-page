@@ -19,9 +19,11 @@
   },
   "homepage": "https://github.com/ceboulba/fcc-landing-page#readme",
   "devDependencies": {
+    "node-sass": "^4.11.0",
     "sass": "^1.15.3"
   },
   "dependencies": {
+    "bulma": "^0.7.2",
     "parcel-bundler": "^1.11.0"
   }
 }
