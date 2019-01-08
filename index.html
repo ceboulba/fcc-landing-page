@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,80 @@
     <link rel="stylesheet" href="./src/css/styles.scss">
     <title>FCC Landing Page</title>
 </head>
+
 <body>
-    <h1 class="title">My landing page</h1>
+    <div class="hero">
+        <div class="hero-body">
+            <div class="container">
+                <header id="header">
+
+                    <nav id="nav-bar">
+                        <ul>
+                            <li><a class="nav-link" href="#features">Features</a> </li>
+                            <li><a class="nav-link" href="#video">video</a> </li>
+                            <li><a class="nav-link" href="#">link 03</a> </li>
+                        </ul>
+                    </nav>
+
+                    <section class="columns" id="features">
+                        <div class="column">
+                            <div class="card">
+                                <div class="card-header">header</div>
+                                <div class="card-content">content</div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <div class="card-header">header</div>
+                                <div class="card-content">content</div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <div class="card-header">header</div>
+                                <div class="card-content">content</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="image" class="columns is-centered">
+                        <div class="column">
+                            <figure class="image">
+                                <img id="header-img is-2by1" src="./src/imgs/surface-book-hd.jpg">
+                            </figure>
+                        </div>
+                    </section>
+                    <!-- width=560 height=420  -->
+
+                    <section id="video" class="columns is-centered">
+                        <div class="">
+                            <figure class="image column">
+                                <iframe class="you-tube-video" src="https://www.youtube.com/embed/CzWS9UMMCNA"
+                                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen id="video">
+                                </iframe>
+                            </figure>
+                        </div>
+                    </section>
+
+                </header>
+
+                <section id="submit">
+                    <form id="form" action="https://www.freecodecamp.com/email-submit" method="get" enctype="text/plain">
+                        <input type="email" id="email" placeholder="enter your email here" class="input" required/>
+                        <input type="submit" id="submit">
+                    </form>
+                </section>
+
+                <section>
+                    <div class="hero-foot">
+                        <p class="title">@copy Archipicture</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>

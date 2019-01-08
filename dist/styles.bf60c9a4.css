@@ -1,4 +1,23 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css";
-h1 {
-  color: red;
+nav {
+  position: sticky;
+  top: 0px;
+}
+
+nav ul {
+  display: flex;
+  align-content: space-around;
+}
+
+.you-tube-video {
+  width: 720px;
+  height: 406.7796610169px;
+}
+
+@media (max-width: 759px) {
+  .you-tube-video {
+    width: 360px;
+    height: 203.3898305085px;
+    border: 1px solid red;
+  }
 }
