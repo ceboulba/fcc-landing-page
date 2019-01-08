@@ -1,14 +1,14 @@
 @import '../../node_modules/bulma/bulma.sass';
 
-nav {
-  position: sticky;
-  top: 0px;
-}
+// nav {
+//   position: sticky;
+//   top: 0px;
+// }
 
-nav ul {
-  display: flex;
-  align-content: space-around;
-}
+// nav ul {
+//   display: flex;
+//   align-content: space-around;
+// }
 
 $width01: 720px;
 $width02: 360px;
@@ -16,6 +16,15 @@ $width02: 360px;
 .you-tube-video {
   width: 720px;
   height: $width01 / 1.77;
+}
+
+.card {
+  height: 100%;
+}
+
+iframe {
+  display: flex;
+  margin: auto;
 }
 
 @media (max-width: 759px) {

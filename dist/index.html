@@ -8,56 +8,117 @@
     <title>FCC Landing Page</title>
   <script src="/styles.bf60c9a4.js"></script></head>
 
-  <body>
-    <div class="hero">
+  <body class="has-navbar-fixed-top">
+    <header class="hero">
       <div class="hero-body container" id="header">
-        <nav id="nav-bar is-fixed-top">
-          <ul>
-            <li><a class="nav-link" href="#features">Features</a></li>
-            <li><a class="nav-link" href="#video">video</a></li>
-            <li><a class="nav-link" href="#">link 03</a></li>
-          </ul>
+        
+        <nav id="nav-bar" class="navbar is-fixed-top">
+          <div class="navbra-brand"><h2 class="subtitle">Archipicture</h2></div>
+          <div class="navbar-menu">
+            <a class="nav-link navbar-item" href="#features">Features</a>
+            <a class="nav-link navbar-item" href="#video-presentation">video</a>
+            <a class="nav-link navbar-item" href="#submit-form">submit</a>
+          </div>
         </nav>
+
+        <section id="image" class="columns is-centered">
+          <div class="column">
+            <figure class="image is-2by1">
+              <img id="header-img" src="/surface-book-hd.fed25ba1.jpg">
+            </figure>
+          </div>
+        </section>
 
         <section class="columns" id="features">
           <div class="column">
             <div class="card">
-              <div class="card-header">header</div>
-              <div class="card-content">content</div>
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="/laptop.b6cb0d5a.jpg" alt="surface book in laptop mode">
+                </figure>
+              </div>
+              <div class="card-header">
+                <div class="card-header-title">Laptop Mode</div>
+              </div>
+              <div class="card-content">
+                <p>
+                  A sleek portable powerhouse with upto 17 hours1 of battery
+                  life. Work with professional-grade software on the full
+                  keyboard, trackpad and touchscreen.
+                </p>
+              </div>
             </div>
           </div>
+
           <div class="column">
             <div class="card">
-              <div class="card-header">header</div>
-              <div class="card-content">content</div>
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="/tablet.2f4a60e4.jpg" alt="surface book in tablet mode">
+                </figure>
+              </div>
+              <div class="card-header">
+                <div class="card-header-title">Tablet mode</div>
+              </div>
+              <div class="card-content">
+                <p>
+                  Detach the stunning PixelsenseTM display to transform Surface
+                  Book 2 into a thin, powerful, and lightweight Intel® CoreTM
+                  i5/i7 tablet you can take anywhere.
+                </p>
+              </div>
             </div>
           </div>
+
           <div class="column">
             <div class="card">
-              <div class="card-header">header</div>
-              <div class="card-content">content</div>
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="/studio.c9643c4a.jpg" alt="surface book in studio mode">
+                </figure>
+              </div>
+              <div class="card-header">
+                <div class="card-header-title">Studio Mode</div>
+              </div>
+              <div class="card-content">
+                <p>
+                  Fold Surface Book 2 into studio mode to draw and sketch
+                  comfortably and naturally. Add Surface Dial and Pen3 for an
+                  immersive creative experience.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="/view.5d4af24b.jpg" alt="surface book in view mode">
+                </figure>
+              </div>
+              <div class="card-header">
+                <div class="card-header-title">View Mode</div>
+              </div>
+              <div class="card-content">
+                <p>
+                  Detach the screen with the push of a button, turn it around,
+                  and reattach to share content and presentations. Perfect for
+                  watching your favorite shows.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        <section id="image" class="columns is-centered">
+        <section id="video-presentation" class="columns is-centered">
           <div class="column">
-            <figure class="image">
-              <img id="header-img is-2by1" src="/surface-book-hd.fed25ba1.jpg">
-            </figure>
+            <iframe class="you-tube-video" src="https://www.youtube.com/embed/CzWS9UMMCNA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" id="video">
+            </iframe>
           </div>
         </section>
 
-        <section id="video" class="columns is-centered">
-          <div class="">
-            <figure class="image column">
-              <iframe class="you-tube-video" src="https://www.youtube.com/embed/CzWS9UMMCNA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" id="video">
-              </iframe>
-            </figure>
-          </div>
-        </section>
-
-        <section id="submit">
+        <section id="submit-form">
           <form id="form" action="https://www.freecodecamp.com/email-submit" method="get" enctype="text/plain">
             <input type="email" id="email" placeholder="enter your email here" class="input" required="">
             <input type="submit" id="submit">
@@ -68,7 +129,7 @@
           <div class="hero-footer"><p class="title">@copy Archipicture</p></div>
         </section>
       </div>
-    </div>
+    </header>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>

@@ -6746,17 +6746,16 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
-nav {
-  position: sticky;
-  top: 0px; }
-
-nav ul {
-  display: flex;
-  align-content: space-around; }
-
 .you-tube-video {
   width: 720px;
   height: 406.77966px; }
+
+.card {
+  height: 100%; }
+
+iframe {
+  display: flex;
+  margin: auto; }
 
 @media (max-width: 759px) {
   .you-tube-video {
