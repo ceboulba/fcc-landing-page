@@ -2,15 +2,10 @@
 
 $width01: 720px;
 $width02: 450px;
+$height: $width01 * 0.6;
 $gris-clair: #dbdbdb;
 $gris-fonce: #4a4a4a;
 $link: $gris-fonce;
-
-.you-tube-video {
-  width: 720px;
-  height: $width01 / 1.77;
-  border: 1px solid $gris-clair;
-}
 
 .card {
   height: 100%;
@@ -20,17 +15,24 @@ $link: $gris-fonce;
   margin: 3rem auto;
 }
 
-iframe {
+iframe#video.youtube-video {
+  width: $width01;
+  margin: auto;
+  height: $width01 * 0.6;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.5), 0 0 0 1px rgba(10, 10, 10, 0.5);
+}
+
+#video-presentation iframe {
   display: flex;
-  margin: 3rem auto;
-  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.5), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 759px) {
-  .you-tube-video {
+  iframe#video.youtube-video {
     width: $width02;
-    height: $width02 / 1.77;
-    border: 1px solid #dbdbdb;
+    margin: auto;
+    height: $width02 * 0.6;
   }
 }
 

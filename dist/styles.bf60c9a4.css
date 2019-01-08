@@ -1,24 +1,25 @@
-.you-tube-video {
-  width: 720px;
-  height: 406.77966px;
-  border: 1px solid #dbdbdb; }
-
 .card {
   height: 100%; }
 
 .form {
   margin: 3rem auto; }
 
-iframe {
+iframe#video.youtube-video {
+  width: 720px;
+  margin: auto;
+  height: 432px;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.5), 0 0 0 1px rgba(10, 10, 10, 0.5); }
+
+#video-presentation iframe {
   display: flex;
-  margin: 3rem auto;
-  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.5), 0 0 0 1px rgba(10, 10, 10, 0.1); }
+  align-items: center;
+  justify-content: center; }
 
 @media (max-width: 759px) {
-  .you-tube-video {
+  iframe#video.youtube-video {
     width: 450px;
-    height: 254.23729px;
-    border: 1px solid #dbdbdb; } }
+    margin: auto;
+    height: 270px; } }
 
 /*! bulma.io v0.7.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
