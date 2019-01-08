@@ -42,3 +42,61 @@ iframe#video.youtube-video {
   background: white;
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
 }
+
+//ANIMATION//
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInDown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.big-picture {
+  animation: moveInDown 4s;
+}
+
+.card01 {
+  animation: moveInLeft 1s;
+  // animation: name duration timing-function delay iteration-count direction
+}
+.card02 {
+  animation: moveInLeft 0.8s;
+  // animation: name duration timing-function delay iteration-count direction
+}
+
+.card03 {
+  animation: moveInRight 0.8s;
+  // animation: name duration timing-function delay iteration-count direction
+}
+.card04 {
+  animation: moveInRight 1s;
+  // animation: name duration timing-function delay iteration-count direction
+}
