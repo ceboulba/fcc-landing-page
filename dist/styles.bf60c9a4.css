@@ -6746,6 +6746,9 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+.hero .navbar {
+  background: white; }
+
 .you-tube-video {
   width: 720px;
   height: 406.77966px; }
@@ -6753,9 +6756,12 @@ label.panel-block {
 .card {
   height: 100%; }
 
+.form {
+  margin: 3rem auto; }
+
 iframe {
   display: flex;
-  margin: auto; }
+  margin: 3rem auto; }
 
 @media (max-width: 759px) {
   .you-tube-video {

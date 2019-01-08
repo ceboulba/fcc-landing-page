@@ -11,13 +11,41 @@
   <body class="has-navbar-fixed-top">
     <header class="hero">
       <div class="hero-body container" id="header">
-        
-        <nav id="nav-bar" class="navbar is-fixed-top">
-          <div class="navbra-brand"><h2 class="subtitle">Archipicture</h2></div>
-          <div class="navbar-menu">
-            <a class="nav-link navbar-item" href="#features">Features</a>
-            <a class="nav-link navbar-item" href="#video-presentation">video</a>
-            <a class="nav-link navbar-item" href="#submit-form">submit</a>
+        <nav
+          class="navbar is-fixed-top"
+          role="navigation"
+          aria-label="main navigation"
+          id="nav-bar"
+        >
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://www.freecodecamp.org/">
+              <img
+                src="./src/imgs/free-code-camp-logo.svg"
+                width="112"
+                height="112"
+              />
+            </a>
+
+            <a
+              role="button"
+              class="navbar-burger burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span> <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item nav-link" href="#features"> Features </a>
+              <a class="navbar-item nav-link" href="#submit-form"> Submit </a>
+              <a class="navbar-item nav-link" href="#video-presentation">
+                Video
+              </a>
+            </div>
           </div>
         </nav>
 
@@ -29,8 +57,8 @@
           </div>
         </section>
 
-        <section class="columns" id="features">
-          <div class="column">
+        <section class="columns is-multiline" id="features">
+          <div class="column is-6-tablet is-3-desktop">
             <div class="card">
               <div class="card-image">
                 <figure class="image is-3by2">
@@ -53,7 +81,7 @@
             </div>
           </div>
 
-          <div class="column">
+          <div class="column is-6-tablet is-3-desktop">
             <div class="card">
               <div class="card-image">
                 <figure class="image is-3by2">
@@ -76,7 +104,7 @@
             </div>
           </div>
 
-          <div class="column">
+          <div class="column is-6-tablet is-3-desktop">
             <div class="card">
               <div class="card-image">
                 <figure class="image is-3by2">
@@ -99,7 +127,7 @@
             </div>
           </div>
 
-          <div class="column">
+          <div class="column is-6-tablet is-3-desktop">
             <div class="card">
               <div class="card-image">
                 <figure class="image is-3by2">
@@ -123,6 +151,33 @@
           </div>
         </section>
 
+        <section id="submit-form" class="columns is-centered form">
+          <div class="column is-10-desktop">
+            <div class="title has-text-centered">Stay tuned</div>
+            <form
+              id="form"
+              action="https://www.freecodecamp.com/"
+              method="POST"
+              class="field has-addons"
+            >
+              <input
+                type="email"
+                id="email"
+                placeholder="enter your email here"
+                class="input control is-medium"
+                name="email"
+                required
+              />
+              <input
+                type="submit"
+                id="submit"
+                value="Submit"
+                class="control is-medium"
+              />
+            </form>
+          </div>
+        </section>
+
         <section id="video-presentation" class="columns is-centered">
           <div class="column">
             <iframe
@@ -137,29 +192,14 @@
           </div>
         </section>
 
-        <section id="submit-form">
-          <form
-            id="form"
-            action="https://www.freecodecamp.com/email-submit"
-            method="get"
-            enctype="text/plain"
-          >
-            <input
-              type="email"
-              id="email"
-              placeholder="enter your email here"
-              class="input"
-              required
-            />
-            <input type="submit" id="submit" />
-          </form>
-        </section>
-
-        <section>
-          <div class="hero-footer"><p class="title">@copy Archipicture</p></div>
+        <section class="columns is-centered">
+          <div class="hero-footer column has-text-centered">
+            <p class="subtitle">@copy Archipicture</p>
+          </div>
         </section>
       </div>
     </header>
+    <script src="./src/js/script.js"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>

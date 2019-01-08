@@ -1,14 +1,8 @@
 @import '../../node_modules/bulma/bulma.sass';
 
-// nav {
-//   position: sticky;
-//   top: 0px;
-// }
-
-// nav ul {
-//   display: flex;
-//   align-content: space-around;
-// }
+.hero .navbar {
+  background: white;
+}
 
 $width01: 720px;
 $width02: 360px;
@@ -22,9 +16,13 @@ $width02: 360px;
   height: 100%;
 }
 
+.form {
+  margin: 3rem auto;
+}
+
 iframe {
   display: flex;
-  margin: auto;
+  margin: 3rem auto;
 }
 
 @media (max-width: 759px) {
