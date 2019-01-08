@@ -6,7 +6,7 @@
 
 iframe#video.youtube-video {
   width: 720px;
-  margin: auto;
+  margin: 4rem auto;
   height: 432px;
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.5), 0 0 0 1px rgba(10, 10, 10, 0.5); }
 
